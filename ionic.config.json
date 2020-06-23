@@ -1,0 +1,7 @@
+{
+  "name": "myPaymentApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
