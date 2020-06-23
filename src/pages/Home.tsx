@@ -3,8 +3,11 @@ import React, {useEffect, useState } from 'react';
 import { BrowserXcooBeePaymentSDK } from '@xcoobee/payment-sdk';
 import './Home.css';
 
-// init XcooBee
+// init XcooBee 
+// TODO: replace the values for campaignId and formId with values from your XcooBee account Project
 const sdk = new BrowserXcooBeePaymentSDK({ campaignId: "test", formId: "test" });
+
+
 
 const Home: React.FC = () => {
 
