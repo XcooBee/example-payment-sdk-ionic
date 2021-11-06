@@ -4,7 +4,7 @@
     "name": "XcooBee Team",
     "url": "https://www.xcoobee.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
     "@capacitor/core": "2.2.0",
