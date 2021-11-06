@@ -26,6 +26,11 @@ Please see [SDK](https://github.com/XcooBee/payment-sdk-js)
 
 Use the `npm install` command in your terminal window after you have navigated to the project directory.
 
+## Configure
+
+Change `Home.tsx` line 8. 
+Add campaignId and formId from your XcooBee project for which you wish to process payments.
+
 ## Run
 
 ```

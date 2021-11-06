@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonFooter, IonRow, IonCol, IonItem, IonInput, IonImg } from '@ionic/react';
 import React, {useEffect, useState } from 'react';
-import { BrowserXcooBeePaymentSDK } from '@xcoobee/payment-sdk';
+import { BrowserXcooBeePaymentSDK } from '@xcoobee/payment-sdk/dist/browser/browser';
 import './Home.css';
 
 // init XcooBee 
@@ -15,8 +15,10 @@ const Home: React.FC = () => {
   const [qr, setQr] = useState<string>();
 
   useEffect(() => {
-    sdk.createPayQr({ amount: chargeAmount, reference: "Order" }, 300).then(base64 => setQr(base64));
-    }, []);
+    sdk
+      .createPayQr({ amount: chargeAmount, reference: "Order" }, 300)
+      .then(base64 => setQr(base64));
+    }, [chargeAmount]);
 
   return (
     <IonPage>
